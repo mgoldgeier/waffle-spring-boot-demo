@@ -1,5 +1,5 @@
 # waffle-spring-boot-demo
-A small demo project of setting up Waffle (http://dblock.github.io/waffle/) with Spring Security
+A small demo project of setting up Waffle (http://dblock.github.io/waffle/) with Spring Boot + Spring Security
 
 Note: Using Internet Explorer 11 to access this application frequently fails with:
 <pre>

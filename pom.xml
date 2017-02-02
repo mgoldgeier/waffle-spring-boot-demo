@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<waffle.version>1.8.1</waffle.version>
+		<waffle.version>1.8.2</waffle.version>
 	</properties>
 
 	<dependencies>
@@ -35,7 +35,7 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>com.github.dblock.waffle</groupId>
+		    <groupId>com.github.waffle</groupId>
 		    <artifactId>waffle-spring-security4</artifactId>
 		    <version>${waffle.version}</version>
 		</dependency>   
