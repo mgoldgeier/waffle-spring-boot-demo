@@ -1,5 +1,6 @@
 package com.example;
 
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -54,5 +55,14 @@ public class WaffleConfig {
         negotiateSecurityFilter.setProvider(securityFilterProviderCollection);
         return negotiateSecurityFilter;
     }
-
+    
+    // This is required for Spring Boot so it does not register the same filter twice
+    @Bean
+    public FilterRegistrationBean waffleNegotiateSecurityFilterRegistration(NegotiateSecurityFilter waffleNegotiateSecurityFilter) {
+    	FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+    	registrationBean.setFilter(waffleNegotiateSecurityFilter);
+    	registrationBean.setEnabled(false);
+    	return registrationBean;
+    }
+    
 }
